@@ -425,7 +425,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .submenu-right {
-        min-width: 380px;
+        min-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .has-dropdown:hover .submenu { 
