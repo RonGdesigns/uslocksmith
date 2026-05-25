@@ -404,6 +404,9 @@ h1, h2, h3, h4, h5, h6 {
     .main-nav ul li a:hover { background: none; color: var(--primary); }
     
     .submenu { 
+        display: flex;
+        flex-direction: column;
+        gap: 0;
         position: absolute; 
         top: 100%; 
         left: 0; 
@@ -425,7 +428,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .submenu-right {
-        min-width: 280px;
+        min-width: 380px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
     
     .has-dropdown:hover .submenu { 
