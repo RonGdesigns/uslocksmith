@@ -428,9 +428,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .submenu-right {
-        min-width: 380px;
+        width: max-content;
+        max-width: 90vw;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(5, max-content);
         gap: 0;
     }
     
