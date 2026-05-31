@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
         img.addEventListener('click', (e) => {
             e.stopPropagation(); // prevent immediate closing
             lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
+            lightboxImg.alt = img.alt || 'Gallery image detail view';
+            lightboxImg.width = img.naturalWidth || img.width || 800;
+            lightboxImg.height = img.naturalHeight || img.height || 600;
             lightboxOverlay.classList.add('active');
             document.body.style.overflow = 'hidden'; // prevent scrolling behind
         });
