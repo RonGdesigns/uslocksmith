@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // If they clicked the main dropdown category header link (or its child elements)
                 if(e.target === mainTrigger || (mainTrigger && mainTrigger.contains(e.target))) {
                     const menuBtn = document.getElementById('mobile-menu-btn');
-                    if (menuBtn && window.getComputedStyle(menuBtn).display !== 'none') {
+                    if (menuBtn && window.matchMedia('(max-width: 768px)').matches) {
                         e.preventDefault();
                     }
                     dropdownElement.classList.toggle('open');

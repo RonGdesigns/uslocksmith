@@ -87,7 +87,11 @@ ${galleryItemsHtml}      </div>
 
 `;
 
-const ourWorkHtml = headerPart + ourWorkContent + footerPart;
+let ourWorkHtml = headerPart + ourWorkContent + footerPart;
+ourWorkHtml = ourWorkHtml.replace(
+    '<link rel="preload" as="image" href="home_hero.webp" fetchpriority="high">',
+    '<link rel="preload" as="image" href="images/Padlock%20Or%20Deadbolt/IMG_20260524_230305%20(18).webp" fetchpriority="high">'
+);
 fs.writeFileSync('our-work.html', ourWorkHtml);
 
 let mainCss = fs.readFileSync('styles.css', 'utf8');
