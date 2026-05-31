@@ -39,10 +39,11 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
     
-                <!-- Preconnect & Fonts -->
+                    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
     <link rel="preload" as="image" href="historic_hero.webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -101,6 +102,7 @@
         </div>
       </div>
     </header>
+    <main id="main-content">
 
     <section
       class="hero"
@@ -119,7 +121,7 @@
       <div class="services-grid">
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-          <h4 style="margin: 10px 0;">Skeleton Key Fabrication</h4>
+          <h3 style="margin: 10px 0;">Skeleton Key Fabrication</h3>
           <p>
             Living in <a href="locksmith-dearborn.html" style="color: var(--primary); text-decoration: underline;">Dearborn's</a> Indian Village or Palmer Woods? We specialize in finding,
             fitting, and fabricating keys for original 1920s-era mortise locks.
@@ -127,7 +129,7 @@
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <h4 style="margin: 10px 0;">Antique Lock Restoration</h4>
+          <h3 style="margin: 10px 0;">Antique Lock Restoration</h3>
           <p>
             Don't replace your beautiful original hardware. We can repair and
             restore antique lock mechanisms so you can keep your home's historic
@@ -137,6 +139,7 @@
       </div>
     </section>
 
+    </main>
     <footer id="about">
       <p><strong>US Locksmith, INC</strong></p>
       <p>13104 West Warren Avenue, Dearborn, MI 48126</p>
@@ -144,7 +147,7 @@
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital.webp" alt="Iron Digital MI Logo">
+          <img width="16" height="16" src="iron-digital.webp" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>

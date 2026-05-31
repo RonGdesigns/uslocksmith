@@ -50,10 +50,11 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
     
-                <!-- Preconnect & Fonts -->
+                    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
     <link rel="preload" as="image" href="images/melvindale_industrial.webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -112,6 +113,7 @@
         </div>
       </div>
     </header>
+    <main id="main-content">
 
     <section class="hero" style="padding: 80px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/melvindale_industrial.webp') center/cover;">
       <h1 style="font-size: 2.5rem; color: white; margin-bottom: 20px;">Commercial & Auto Locksmith in Melvindale</h1>
@@ -126,23 +128,24 @@
       <div class="services-grid">
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="9" y1="16" x2="15" y2="16"/><path d="M8 6h2v2H8zm6 0h2v2h-2zm-6 5h2v2H8zm6 0h2v2h-2z"/></svg>
-          <h4 style="margin: 10px 0;">Corporate &amp; Commercial Security</h4>
+          <h3 style="margin: 10px 0;">Corporate &amp; Commercial Security</h3>
           <p>Securing Melvindale's business districts with heavy-duty commercial door hardware and comprehensive master key setups.</p>
         </div>
         
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          <h4 style="margin: 10px 0;">Fleet &amp; Commercial Vehicles</h4>
+          <h3 style="margin: 10px 0;">Fleet &amp; Commercial Vehicles</h3>
           <p>Expert key programming and replacement for company fleet vehicles, work vans, and luxury executive cars.</p>
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <h4 style="margin: 10px 0;">Apartment &amp; Condo Rekeying</h4>
+          <h3 style="margin: 10px 0;">Apartment &amp; Condo Rekeying</h3>
           <p>Fast lock changes and rekeying services for new tenants, property managers, and homeowners throughout Melvindale.</p>
         </div>
       </div>
     </section>
 
+    </main>
     <footer id="about">
       <p><strong>US Locksmith, INC</strong></p>
       <p>13104 West Warren Avenue, Dearborn, MI 48126</p>
@@ -150,7 +153,7 @@
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital.webp" alt="Iron Digital MI Logo">
+          <img width="16" height="16" src="iron-digital.webp" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>

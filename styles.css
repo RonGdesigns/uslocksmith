@@ -4,8 +4,8 @@
 :root { 
     --display-font: 'Playfair Display', serif;
     --mono-font: 'Space Mono', monospace;
-    --primary: #e63946; /* Deep Red */
-    --primary-hover: #f05a66;
+    --primary: #c91b29; /* High-contrast Deep Red (WCAG AA compliant) */
+    --primary-hover: #e02434;
     --secondary: #0b132b; /* True Dark */
     --white: #1c2541; /* Off-Black for panels */
     --accent: #2ecc71;
@@ -84,13 +84,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-btn {
-    background: #27ae60; 
+    background: #1b7a43; 
     padding: 20px 40px; 
     font-size: 1.2rem;
     font-family: var(--mono-font);
     text-transform: uppercase;
 }
-.hero-btn:hover { background: #219653; }
+.hero-btn:hover { background: #145a32; }
 
 .mobile-btn {
     box-sizing: border-box;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 .stars { color: #f1c40f; letter-spacing: 2px; margin-bottom: 15px; font-size: 1.2rem; }
 .review-text { font-style: italic; color: var(--text-main); margin-bottom: 20px; }
 .review-author { font-family: var(--mono-font); font-weight: bold; color: #fff; text-transform: uppercase; font-size: 0.9rem; }
-.review-location { color: var(--primary); font-size: 0.8rem; margin-left: 10px; }
+.review-location { color: #ff6b6b; font-size: 0.8rem; margin-left: 10px; }
 
 .service-area-cluster {
     padding: 60px 5%;

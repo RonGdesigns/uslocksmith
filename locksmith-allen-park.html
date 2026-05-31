@@ -50,10 +50,11 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
     
-                <!-- Preconnect & Fonts -->
+                    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
     <link rel="preload" as="image" href="images/allen_park_downtown.webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -112,6 +113,7 @@
         </div>
       </div>
     </header>
+    <main id="main-content">
 
     <section class="hero" style="padding: 80px 5%; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/allen_park_downtown.webp') center/cover;">
       <h1 style="font-size: 2.5rem; color: white; margin-bottom: 20px;">Your Local Allen Park Locksmith</h1>
@@ -126,27 +128,28 @@
       <div class="services-grid">
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <h4 style="margin: 10px 0;">Residential Lock &amp; Key</h4>
+          <h3 style="margin: 10px 0;">Residential Lock &amp; Key</h3>
           <p>Protecting Allen Park families with lock rekeying, deadbolt installation, and smart lock upgrades for your home.</p>
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          <h4 style="margin: 10px 0;">Downtown Allen Park Lockouts</h4>
+          <h3 style="margin: 10px 0;">Downtown Allen Park Lockouts</h3>
           <p>Lost your keys while out on Washington or Main Street? We provide rapid emergency unlocking for your car or home.</p>
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17h2m2 0h6m2 0h2"/></svg>
-          <h4 style="margin: 10px 0;">Woodward Avenue Roadside</h4>
+          <h3 style="margin: 10px 0;">Woodward Avenue Roadside</h3>
           <p>Fast car key replacement, transponder programming, and ignition repair for commuters and cruisers along the Woodward corridor.</p>
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="9" y1="16" x2="15" y2="16"/><path d="M8 6h2v2H8zm6 0h2v2h-2zm-6 5h2v2H8zm6 0h2v2h-2z"/></svg>
-          <h4 style="margin: 10px 0;">Retail &amp; Restaurant Security</h4>
+          <h3 style="margin: 10px 0;">Retail &amp; Restaurant Security</h3>
           <p>Commercial locksmith services for downtown Allen Park businesses, including master key systems and high-security commercial hardware.</p>
         </div>
       </div>
     </section>
 
+    </main>
     <footer id="about">
       <p><strong>US Locksmith, INC</strong></p>
       <p>13104 West Warren Avenue, Dearborn, MI 48126</p>
@@ -154,7 +157,7 @@
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital.webp" alt="Iron Digital MI Logo">
+          <img width="16" height="16" src="iron-digital.webp" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>

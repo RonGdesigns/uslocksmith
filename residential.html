@@ -39,10 +39,11 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
     
-                <!-- Preconnect & Fonts -->
+                    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
     <link rel="preload" as="image" href="residential_hero.webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -101,6 +102,7 @@
         </div>
       </div>
     </header>
+    <main id="main-content">
 
     <section
       class="hero"
@@ -119,7 +121,7 @@
       <div class="services-grid">
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <h4 style="margin: 10px 0;">Emergency House Lockouts</h4>
+          <h3 style="margin: 10px 0;">Emergency House Lockouts</h3>
           <p>
             Locked out of your home? We provide fast, non-destructive entry so
             you can get back inside safely, any time of day or night.
@@ -127,7 +129,7 @@
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-          <h4 style="margin: 10px 0;">Lock Rekeying &amp; Replacement</h4>
+          <h3 style="margin: 10px 0;">Lock Rekeying &amp; Replacement</h3>
           <p>
             Just moved in? We can rekey your existing locks so old keys no
             longer work, saving you the cost of entirely new hardware.
@@ -135,7 +137,7 @@
         </div>
         <div class="service-item base-service">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/><rect x="9" y="8" width="6" height="6" rx="1"/></svg>
-          <h4 style="margin: 10px 0;">Smart Lock Installation</h4>
+          <h3 style="margin: 10px 0;">Smart Lock Installation</h3>
           <p>
             Upgrade to keyless entry with professional installation of
             electronic deadbolts, keypad locks, and smart home security systems.
@@ -144,6 +146,7 @@
       </div>
     </section>
 
+    </main>
     <footer id="about">
       <p><strong>US Locksmith, INC</strong></p>
       <p>13104 West Warren Avenue, Dearborn, MI 48126</p>
@@ -151,7 +154,7 @@
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital.webp" alt="Iron Digital MI Logo">
+          <img width="16" height="16" src="iron-digital.webp" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>

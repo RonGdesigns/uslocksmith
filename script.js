@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const lightboxImg = document.createElement('img');
     lightboxImg.className = 'lightbox-img';
+    lightboxImg.alt = 'Gallery image detail view';
     
     const lightboxClose = document.createElement('div');
     lightboxClose.className = 'lightbox-close';
